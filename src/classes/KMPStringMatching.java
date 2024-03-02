@@ -1,3 +1,7 @@
+package classes;
+
+import classes.IAlgoStringMatching;
+
 public class KMPStringMatching implements IAlgoStringMatching {
     @Override
     public int search(String text, String pattern) {

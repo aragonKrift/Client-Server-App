@@ -1,6 +1,14 @@
+package classes;
+
+import classes.IAlgoStringMatching;
+
 public class RabinKarpStringMatching implements IAlgoStringMatching {
     @Override
     public int search(String text, String pattern) {
+        if (text.isEmpty() || pattern.isEmpty()) {
+            return -1;
+        }
+
         int n = text.length();
         int m = pattern.length();
         int prime = 101; // a prime number
